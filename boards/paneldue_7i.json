@@ -1,0 +1,55 @@
+{
+  "build": {
+    "core": "arduino",  
+    "cpu": "cortex-m4",
+    "extra_flags": "-D__SAM4S4B__ -DPANELDUE_7I",
+    "f_cpu": "120000000L",
+    "hwids": [
+      [
+        "0x2341",
+        "0x003E"
+      ],
+      [
+        "0x2341",
+        "0x003D"
+      ],
+      [
+        "0x2A03",
+        "0x003D"
+      ]
+    ],
+    "mcu": "atsam4s4ba",
+    "usb_product": "PanelDue 7i"
+  },
+  "connectivity": [
+    "can"
+  ],
+  "debug": {
+    "jlink_device": "ATSAM4S4B",
+    "openocd_chipname": "at91sam4s4b",
+    "openocd_target": "at91sam4sXX",
+    "svd_path": "ATSAM4S4B.svd"
+  },
+  "frameworks": [
+  ],
+  "name": "PanelDue 7i",
+  "upload": {
+    "disable_flushing": true,
+    "maximum_ram_size": 65536,
+    "maximum_size": 262144,
+    "native_usb": false,
+    "protocol": "sam-ba",
+    "protocols": [
+      "sam-ba",
+      "jlink",
+      "blackmagic",
+      "atmel-ice",
+      "stlink"
+    ],
+    "require_upload_port": true,
+    "use_1200bps_touch": true,
+    "wait_for_upload_port": false
+  },
+  "url": "https://www.duet3d.com/IntegratedPanelDue",
+  "vendor": "Duet3D"
+}
